@@ -1,12 +1,9 @@
 ﻿#include <iostream>
-#include "DataUtil.h"
 #include "TestData.h"
+#include "DataUtil.h"
 
 int main()
 {
-	ADD_DATA_CLASS_TO_GENERATOR(Test1);
-	ADD_DATA_CLASS_TO_GENERATOR(Test2);
-
 	auto t1 = MAKE_DATA_OBJECT(Test1);
 	auto t11 = MAKE_DATA_OBJECT(Test1);
 	auto t2 = MAKE_DATA_OBJECT(Test2);

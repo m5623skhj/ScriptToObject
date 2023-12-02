@@ -129,9 +129,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DataUtil.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DataMacro.h" />
+    <ClInclude Include="DataObjectBase.h" />
+    <ClInclude Include="DataRegister.h" />
     <ClInclude Include="DataUtil.h" />
     <ClInclude Include="TestData.h" />
   </ItemGroup>

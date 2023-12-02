@@ -1,11 +1,11 @@
 #pragma once
-#include "DataUtil.h"
-#include <list>
+#include "DataObjectBase.h"
+#include "DataMacro.h"
 
 class Test1 : public DataObjectBase
 {
 public:
-	SET_DATA_OBJECT(Test1, int)
+	SET_DATA_OBJECT(Test1, int);
 
 	virtual bool PostLoad()
 	{

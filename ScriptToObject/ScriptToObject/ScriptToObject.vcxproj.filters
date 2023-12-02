@@ -24,13 +24,25 @@
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="DataUtil.cpp">
+      <Filter>소스 파일\DataUtil</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DataUtil.h">
       <Filter>소스 파일\DataUtil</Filter>
     </ClInclude>
+    <ClInclude Include="DataMacro.h">
+      <Filter>소스 파일\DataUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="DataRegister.h">
+      <Filter>소스 파일\DataUtil</Filter>
+    </ClInclude>
     <ClInclude Include="TestData.h">
       <Filter>소스 파일\TestData</Filter>
+    </ClInclude>
+    <ClInclude Include="DataObjectBase.h">
+      <Filter>소스 파일\DataUtil</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
