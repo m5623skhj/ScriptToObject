@@ -13,10 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\DataUtil">
+      <UniqueIdentifier>{b725175e-0d18-4423-bc6e-d17b09a83df4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TestData">
+      <UniqueIdentifier>{a9c9a83f-00e7-43db-b702-37f37c816faa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DataUtil.h">
+      <Filter>소스 파일\DataUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="TestData.h">
+      <Filter>소스 파일\TestData</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
