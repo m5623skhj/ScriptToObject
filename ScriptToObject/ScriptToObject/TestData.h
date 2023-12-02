@@ -5,7 +5,7 @@
 class Test1 : public DataObjectBase
 {
 public:
-	SET_DATA_OBJECT("Test1", int)
+	SET_DATA_OBJECT(Test1, int)
 
 	virtual bool PostLoad()
 	{
@@ -19,7 +19,7 @@ public:
 class Test2 : public DataObjectBase
 {
 public:
-	SET_DATA_OBJECT("Test2", std::string_view);
+	SET_DATA_OBJECT(Test2, std::string_view);
 
 	virtual bool PostLoad()
 	{

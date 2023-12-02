@@ -109,7 +109,7 @@ SET_OBJECT_TYPE_NAME(className);
 #define SET_DATA_KEY_TYPE(type) using DataKeyType = type
 #define SET_OBJECT_TYPE_NAME(className) \
 virtual constexpr std::string_view GetObjectTypeName() override{ \
-	return className; \
+	return #className; \
 }
 
 #define ADD_DATA(classType, key, value) \
