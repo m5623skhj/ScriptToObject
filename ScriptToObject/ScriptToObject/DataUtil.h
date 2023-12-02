@@ -49,9 +49,7 @@ template<typename DataKeyType, DataBased DataValueType>
 class DataContainer
 {
 private:
-	DataContainer()
-	{
-	}
+	DataContainer() = default;
 
 public:
 	static DataContainer& GetInst()
