@@ -34,7 +34,7 @@
 
 2.2. DataRegister.h / DATA_REGISTER()에 ADD_DATA_CLASS_TO_GENERATOR(classType) 선언
 
-2.3. JsonUtil.cpp / LoadAllDataScript(className, fileName)에 선언
+2.3. JsonUtil.cpp / LoadAllDataScript(className, fileName)에 및 POST_LOAD(className) 선언
 
 ---
 
