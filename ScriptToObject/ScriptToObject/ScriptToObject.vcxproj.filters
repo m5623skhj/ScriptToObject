@@ -19,6 +19,9 @@
     <Filter Include="소스 파일\TestData">
       <UniqueIdentifier>{a9c9a83f-00e7-43db-b702-37f37c816faa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\JsonUtil">
+      <UniqueIdentifier>{f34a9cbb-6981-41be-99cc-33f6aed9b760}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -26,6 +29,9 @@
     </ClCompile>
     <ClCompile Include="DataUtil.cpp">
       <Filter>소스 파일\DataUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonUtil.cpp">
+      <Filter>소스 파일\JsonUtil</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -43,6 +49,9 @@
     </ClInclude>
     <ClInclude Include="DataObjectBase.h">
       <Filter>소스 파일\DataUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonUtil.h">
+      <Filter>소스 파일\JsonUtil</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

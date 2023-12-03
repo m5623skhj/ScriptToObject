@@ -3,15 +3,9 @@
 #include <unordered_map>
 #include <functional>
 #include <concepts>
-#include <fstream>
-#include "nlohmann/json.hpp"
-#include "DataMacro.h"
 #include "DataObjectBase.h"
 
 using DataObjectConstructor = std::function<DataObjectBase*()>;
-
-template<typename T>
-concept DataBased = std::is_base_of<DataObjectBase, T>::value;
 
 #pragma region DataObjectGenerator
 
