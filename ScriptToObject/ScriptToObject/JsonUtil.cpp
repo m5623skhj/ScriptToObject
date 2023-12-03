@@ -39,8 +39,12 @@ namespace JsonUtil
 			<< "Start load from " << currentFolder << std::endl
 			<< "--------------------------------------" << std::endl;
 
+#pragma region AddToContainer
+
 		ADD_TO_CONTAINER(Test1, "Test1.json");
 		ADD_TO_CONTAINER(Test2, "Test2.json");
+
+#pragma endregion AddToContainer
 
 		std::cout << std::endl
 			<< "--------------------------------------" << std::endl
@@ -48,8 +52,12 @@ namespace JsonUtil
 			<< "Start PostLoad()"  << std::endl
 			<< "--------------------------------------" << std::endl;
 
+#pragma region PostLoad
+
 		POST_LOAD(Test1);
 		POST_LOAD(Test2);
+
+#pragma endregion PostLoad
 
 		std::cout << std::endl
 			<< "--------------------------------------" << std::endl
