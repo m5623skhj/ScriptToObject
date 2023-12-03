@@ -18,17 +18,17 @@
 
 2.0. JsonUtil.h의 jsonScriptFolderPath 경로 확인 및 수정
 
-2.1. DataObjectBase 클래스를 상속 받는 사용자 정의 클래스를 정의
+2.1.1. DataObjectBase 클래스를 상속 받는 사용자 정의 클래스를 정의
 
-2.1.1. SET_DATA_OBJECT(className, keyType, key)를 정의
+2.1.2. SET_DATA_OBJECT(className, keyType, key)를 정의
 
-2.1.2. LoadFromJson()에 들어온 스크립트 데이터를 어떤 변수에 넣을 것인지 정의
+2.2. LoadFromJson()에 들어온 스크립트 데이터를 어떤 변수에 넣을 것인지 정의
 
-2.1.3. PostLoad()정의
+2.3. PostLoad()정의
 
-2.2. DataRegister.h / DATA_REGISTER()에 ADD_DATA_CLASS_TO_GENERATOR(classType) 선언
+2.3.1. DataRegister.h / DATA_REGISTER()에 ADD_DATA_CLASS_TO_GENERATOR(classType) 선언
 
-2.3. JsonUtil.cpp / LoadAllDataScript(className, fileName)에 선언
+2.3.2. JsonUtil.cpp / LoadAllDataScript(className, fileName)에 선언
 
 ---
 
