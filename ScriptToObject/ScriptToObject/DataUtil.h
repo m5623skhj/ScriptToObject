@@ -68,6 +68,19 @@ public:
 		dataMap.insert({ key, value });
 	}
 
+	bool PostLoad()
+	{
+		for (auto& data : dataMap)
+		{
+			if (data.second->PostLoad() == false)
+			{
+				return false;
+			}
+		}
+
+		return true;
+	}
+
 private:
 	std::unordered_map<DataKeyType, DataValueType*> dataMap;
 };
