@@ -22,13 +22,13 @@
 
 2.1.2. SET_DATA_OBJECT(className, keyType, key)를 정의
 
-2.2. LoadFromJson()에 들어온 스크립트 데이터를 어떤 변수에 넣을 것인지 정의
+2.1.3. LoadFromJson()에 들어온 스크립트 데이터를 어떤 변수에 넣을 것인지 정의
 
-2.3. PostLoad()정의
+2.1.4. PostLoad()정의
 
-2.3.1. DataRegister.h / DATA_REGISTER()에 ADD_DATA_CLASS_TO_GENERATOR(classType) 선언
+2.2. DataRegister.h / DATA_REGISTER()에 ADD_DATA_CLASS_TO_GENERATOR(classType) 선언
 
-2.3.2. JsonUtil.cpp / LoadAllDataScript(className, fileName)에 선언
+2.3. JsonUtil.cpp / LoadAllDataScript(className, fileName)에 선언
 
 ---
 
@@ -36,6 +36,6 @@
 
 3.1. LoadAllDataScript()를 가장 먼저 호출하여, 모든 스크립트를 미리 로드
 
-3.2.1. 정상적으로 로딩이 완료되었다면, FIND_DATA(className, key)로 원하는 데이터를 얻어옴
+3.2. 정상적으로 로딩이 완료되었다면, FIND_DATA(className, key)로 원하는 데이터를 얻어옴
 
-3.2.2. 해당하는 키가 없을 경우, nullptr이 반환되므로, 반드시 반환 결과값이 nullptr인지 확인 필요
+3.3. 해당하는 키가 없을 경우, nullptr이 반환되므로, 반드시 반환 결과값이 nullptr인지 확인 필요
