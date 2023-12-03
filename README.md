@@ -49,3 +49,9 @@
 ![image](https://github.com/m5623skhj/ScriptToObject/assets/42509418/32cf154f-7391-4a2f-a933-488f5a467290)
 
 위의 예에서 Test1에 대한 key 100은 정의된 것이 없기 때문에, tempErr은 nullptr 임
+
+3.4. PostLoad()는 다른 모든 파일들이 로드 된 이후 실행
+
+3.4.1. 다른 데이터가 필요하거나, 로드 이후 다른 행동을 정의할 경우, 사용자 클래스에 정의한 PostLoad()에서 해당 내용들을 정의
+
+3.4.2. 결과가 의도치 않다면 false를 반환하여, 정상적인 상황이 아님을 외부에 알려 이후 PostLoad()를 정지시킴
