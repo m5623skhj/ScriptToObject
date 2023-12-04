@@ -18,7 +18,7 @@ SET_DATA_KEY_TYPE(keyType); \
 SET_OBJECT_TYPE_NAME(classType); \
 virtual void AddDataToDataContainer() override \
 { \
-	ADD_DATA(classType, id, this); \
+	ADD_DATA(classType, key, this); \
 }
 
 #define SET_DATA_KEY_TYPE(type) using DataKeyType = type
