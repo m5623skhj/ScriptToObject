@@ -24,13 +24,15 @@
 
 2.1.1. DataObjectBase 클래스를 상속 받는 사용자 정의 클래스를 정의
 
-2.1.2. SET_DATA_OBJECT(className, keyType, key)를 정의
+2.1.2. SET_DATA_OBJECT(className, key)를 정의
+
+### 2.1.2.1 반드시 SET_DATA_OBJECT()에 들어오는 key 변수가 SET_DATA_OBJECT() 보다 먼저 정의되어야 함
 
 2.1.3. LoadFromJson()에 들어온 스크립트 데이터를 어떤 변수에 넣을 것인지 정의
 
 2.1.4. PostLoad()정의
 
-![image](https://github.com/m5623skhj/ScriptToObject/assets/42509418/fcfe7eca-9c83-4aba-abdf-7b5eee94c1fb)
+![image](https://github.com/m5623skhj/ScriptToObject/assets/42509418/a1fafd37-d178-430d-a331-86c77318fec9)
 
 2.2. DataRegister.h / DATA_REGISTER()에 ADD_DATA_CLASS_TO_GENERATOR(classType) 선언
 
