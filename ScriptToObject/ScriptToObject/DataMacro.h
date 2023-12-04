@@ -23,7 +23,8 @@ virtual void AddDataToDataContainer() override \
 
 #define SET_DATA_KEY_TYPE(type) using DataKeyType = type
 #define SET_OBJECT_TYPE_NAME(classType) \
-virtual constexpr std::string_view GetObjectTypeName() override{ \
+virtual constexpr std::string_view GetObjectTypeName() override \
+{ \
 	return #classType; \
 }
 
