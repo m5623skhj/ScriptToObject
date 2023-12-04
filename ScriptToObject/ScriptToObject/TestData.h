@@ -5,7 +5,11 @@
 class Test1 : public DataObjectBase
 {
 public:
-	SET_DATA_OBJECT(Test1, int, id);
+	int id;
+	std::string stringItem;
+
+public:
+	SET_DATA_OBJECT(Test1, id);
 
 	virtual void LoadFromJson(const nlohmann::json& jsonObject) override
 	{
@@ -17,15 +21,16 @@ public:
 	{
 		return true;
 	}
-
-	int id;
-	std::string stringItem;
 };
 
 class Test2 : public DataObjectBase
 {
 public:
-	SET_DATA_OBJECT(Test2, std::string_view, id);
+	std::string id;
+	float fl;
+
+public:
+	SET_DATA_OBJECT(Test2, id);
 
 	virtual void LoadFromJson(const nlohmann::json& jsonObject) override
 	{
@@ -38,6 +43,4 @@ public:
 		return true;
 	}
 
-	std::string id;
-	float fl;
 };

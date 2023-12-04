@@ -13,8 +13,8 @@ DataObjectGenerator::GetInst().MakeDataObject<className>(typeName)
 
 #pragma region DataContainer
 
-#define SET_DATA_OBJECT(classType, keyType, key) \
-SET_DATA_KEY_TYPE(keyType); \
+#define SET_DATA_OBJECT(classType, key) \
+SET_DATA_KEY_TYPE(decltype(key)); \
 SET_OBJECT_TYPE_NAME(classType); \
 virtual void AddDataToDataContainer() override \
 { \
@@ -28,7 +28,7 @@ virtual constexpr std::string_view GetObjectTypeName() override{ \
 }
 
 #define ADD_DATA(classType, key, value) \
-DataContainer<classType::DataKeyType, classType>::GetInst().AddData(key, value);
+DataContainer<classType::DataKeyType, classType>::GetInst().AddData(key, value)
 
 #define FIND_DATA(classType, key) \
 DataContainer<classType::DataKeyType, classType>::GetInst().FindData(key)
