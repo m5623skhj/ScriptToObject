@@ -134,6 +134,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Config.h" />
     <ClInclude Include="DataMacro.h" />
     <ClInclude Include="DataObjectBase.h" />
     <ClInclude Include="DataRegister.h" />

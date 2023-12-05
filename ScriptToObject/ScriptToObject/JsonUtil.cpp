@@ -1,12 +1,13 @@
 #include "JsonUtil.h"
 #include <windows.h>
 #include "DataUtil.h"
+#include "Config.h"
 
 #include "TestData.h"
 
 #define ADD_TO_CONTAINER(className, jsonFileName){ \
 	std::cout << "Start loading : " << jsonFileName << std::endl; \
-	if(AddToDataContainerFromJsonFile<className>(currentFolder + jsonScriptFolderPath + jsonFileName) == false) \
+	if(AddToDataContainerFromJsonFile<className>(currentFolder + Configuration::Config::GetInst().jsonScriptFolderPath + jsonFileName) == false) \
 	{ \
 		std::cout << "Load failed : " << jsonFileName << std::endl; \
 		return false; \
@@ -32,6 +33,11 @@ namespace JsonUtil
 
 	bool LoadAllDataScript()
 	{
+		if (Configuration::LoadConfiguration(Configuration::configurationFilePath) == false)
+		{
+			return false;
+		}
+
 		std::string currentFolder = GetCurrentFolder();
 
 		std::cout << std::endl

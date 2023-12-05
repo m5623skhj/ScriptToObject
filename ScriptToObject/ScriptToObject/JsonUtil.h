@@ -9,8 +9,6 @@
 
 namespace JsonUtil
 {
-	const std::string jsonScriptFolderPath = "\\..\\Script\\";
-
 	std::string GetCurrentFolder();
 	bool LoadAllDataScript();
 

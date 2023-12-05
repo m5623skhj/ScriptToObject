@@ -22,6 +22,9 @@
     <Filter Include="소스 파일\JsonUtil">
       <UniqueIdentifier>{f34a9cbb-6981-41be-99cc-33f6aed9b760}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Config">
+      <UniqueIdentifier>{4692b5d7-4c95-4e2f-9820-6cbccbda6784}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -52,6 +55,9 @@
     </ClInclude>
     <ClInclude Include="JsonUtil.h">
       <Filter>소스 파일\JsonUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>소스 파일\Config</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
