@@ -27,7 +27,7 @@ namespace JsonUtil
 	std::string GetCurrentFolder()
 	{
 		char buffer[MAX_PATH];
-		GetCurrentDirectoryA(MAX_PATH, buffer);
+		GetModuleFileNameA(NULL, buffer, MAX_PATH);
 		return std::string(buffer);
 	}
 

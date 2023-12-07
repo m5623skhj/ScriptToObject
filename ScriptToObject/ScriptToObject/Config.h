@@ -3,7 +3,7 @@
 
 namespace Configuration
 {
-	const std::string configurationFilePath = "..\\Config.json";
+	const std::string configurationFilePath = "..\\..\\bin\\Config.json";
 
 	struct Config
 	{
